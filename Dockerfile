@@ -9,4 +9,5 @@ RUN cd /usr/local/tomcat/webapps/ \
 	&& rm -f /usr/local/tomcat/conf/context.xml
 
 COPY tomcat-config/* /usr/local/tomcat/conf/
+COPY ssl-config/* /root/
 COPY app.war /usr/local/tomcat/webapps/ROOT.war
